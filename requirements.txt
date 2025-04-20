@@ -1,10 +1,9 @@
-google-search-results
 beautifulsoup4
 readability-lxml
 trafilatura
 newspaper3k
 streamlit
-serpapi
+serpapi==2.0.0
 openai
 scikit-learn
 fastapi
