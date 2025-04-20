@@ -1,0 +1,9 @@
+google-search-results
+beautifulsoup4
+readability-lxml
+newspaper3k
+openai
+scikit-learn
+fastapi
+uvicorn[standard]
+lxml==4.9.3
