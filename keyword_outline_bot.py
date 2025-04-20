@@ -60,21 +60,18 @@ def analyse_article(text: str, url: str) -> Dict:
     user_prompt = f"文章網址：{url}\n\n文章內容如下：\n{text[:3000]}"
 
     try:
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt}
-        ]
-    )
-    reply = response.choices[0].message.content
-    return parse_analysis(reply)
-except Exception as e:
-    print("🔥 OpenAI 回傳錯誤：", e)
-    raise e
-
-    reply = response.choices[0].message.content
-    return parse_analysis(reply)
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ]
+        )
+        reply = response.choices[0].message.content
+        return parse_analysis(reply)
+    except Exception as e:
+        print("🔥 OpenAI 回傳錯誤：", e)
+        raise e
 
 
 def parse_analysis(text: str) -> Dict:
