@@ -8,6 +8,7 @@ from trafilatura import fetch_url, extract
 from newspaper import Article
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
+print(f"openai_api_key 的值: {openai_api_key}")
 serpapi_api_key = os.getenv("SERPAPI_API_KEY")
 print(f"serpapi_api_key 的值: {serpapi_api_key}")
 
