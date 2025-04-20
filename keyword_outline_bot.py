@@ -7,11 +7,10 @@ from serpapi import GoogleSearch
 from trafilatura import fetch_url, extract
 from newspaper import Article
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-SERP_API_KEY = os.getenv("SERPAPI_API_KEY")
+openai_api_key = os.getenv("OPENAI_API_KEY")
+serpapi_api_key = os.getenv("SERPAPI_API_KEY")
 
-client = OpenAI(api_key=OPENAI_API_KEY)
-
+client = OpenAI(api_key=openai_api_key)
 
 def get_top_urls(keyword: str, n: int = 5) -> List[Dict[str, str]]:
     params = {
