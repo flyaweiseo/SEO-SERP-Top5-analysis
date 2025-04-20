@@ -1,7 +1,7 @@
 # keyword_outline_bot.py
 import os
 os.environ["SERPAPI_API_KEY"] = "8203796302425e44b227d07cbf63c31b392ab1d57fec8f41bfef9de6a978c521"
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 import json
 from typing import List, Dict
 from openai import OpenAI
