@@ -20,8 +20,8 @@ def get_top_urls(keyword: str, n: int = 5) -> List[Dict[str, str]]:
         "q": keyword,
         "api_key": serpapi_api_key,
         "num": n,
-        "hl": "en",
-        "gl": "us",
+        "hl": "zh-tw",
+        "gl": "tw",
         "google_domain": "google.com"
     }
     results = GoogleSearch(params).get_dict()
