@@ -3,6 +3,8 @@ beautifulsoup4
 readability-lxml
 trafilatura
 newspaper3k
+streamlit
+serpapi
 openai
 scikit-learn
 fastapi
