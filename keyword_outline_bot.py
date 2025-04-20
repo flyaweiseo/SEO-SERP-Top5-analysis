@@ -59,7 +59,7 @@ def analyse_article(text: str, url: str) -> Dict:
     user_prompt = f"文章網址：{url}\n\n文章內容如下：\n{text[:3000]}"
 
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
@@ -100,7 +100,7 @@ def propose_better_outline(analyses: List[Dict], keyword: str) -> str:
     user_prompt = f"【競品優點】\n{pros}\n\n【競品缺點】\n{cons}\n\n【競品大綱】\n{outlines}"
 
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt[:3500]}
