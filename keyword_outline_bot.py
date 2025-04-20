@@ -9,7 +9,7 @@ from newspaper import Article
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
 serpapi_api_key = os.getenv("SERPAPI_API_KEY")
-print(f"SERP_API_KEY 的值: {SERP_API_KEY}")
+print(f"serpapi_api_key 的值: {serpapi_api_key}")
 
 client = OpenAI(api_key=openai_api_key)
 
@@ -17,7 +17,7 @@ def get_top_urls(keyword: str, n: int = 5) -> List[Dict[str, str]]:
     params = {
         "engine": "google",
         "q": keyword,
-        "api_key": SERP_API_KEY,
+        "api_key": serpapi_api_key,
         "num": n,
         "hl": "en",
         "gl": "us",
