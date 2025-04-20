@@ -9,6 +9,7 @@ from newspaper import Article
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
 serpapi_api_key = os.getenv("SERPAPI_API_KEY")
+print(f"SERP_API_KEY 的值: {SERP_API_KEY}")
 
 client = OpenAI(api_key=openai_api_key)
 
