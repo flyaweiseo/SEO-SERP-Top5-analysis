@@ -1,6 +1,7 @@
 google-search-results
 beautifulsoup4
 readability-lxml
+trafilatura
 newspaper3k
 openai
 scikit-learn
