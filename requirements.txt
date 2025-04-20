@@ -1,5 +1,4 @@
 beautifulsoup4
-readability-lxml
 trafilatura
 newspaper3k
 streamlit
@@ -7,5 +6,4 @@ serpapi==2.0.0
 openai
 scikit-learn
 fastapi
-uvicorn[standard]
 lxml==4.9.3
